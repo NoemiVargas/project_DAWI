@@ -18,7 +18,7 @@ public class AlumnoServices {
 	public void grabar(Alumno a) {
 		repo.save(a);
 	}
-	public void eliminarPorID(Integer cod) {
+	public void eliminar(Integer cod) {
 		repo.deleteById(cod);
 	}
 	public Alumno buscarPorID(Integer cod) {
