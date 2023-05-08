@@ -21,7 +21,7 @@ public class AlumnoServices {
 	public void eliminar(Integer cod) {
 		repo.deleteById(cod);
 	}
-	public Alumno buscarPorID(Integer cod) {
+	public Alumno buscarPorCodigo(Integer cod) {
 		return repo.findById(cod).orElse(null);
 	}
 	public List<Alumno> listarTodos(){
